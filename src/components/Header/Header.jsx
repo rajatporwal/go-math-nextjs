@@ -78,7 +78,7 @@ const ResponsiveAppBar = ({ searchData }) => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                   <Link href={`/${page.toLowerCase()}`} rel="noopener noreferrer"><Typography textAlign="center">{page}</Typography></Link>
+                   <Link href={page === 'Home' ? `/` : `/${page.toLowerCase()}`} rel="noopener noreferrer"><Typography textAlign="center">{page}</Typography></Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -93,7 +93,7 @@ const ResponsiveAppBar = ({ searchData }) => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link key={page} href={`/${page.toLowerCase()}`} rel="noopener noreferrer">
+              <Link key={page} href={page === 'Home' ? `/` : `/${page.toLowerCase()}`} rel="noopener noreferrer">
                 <Box
                   key={page}
                   onClick={handleCloseNavMenu}
