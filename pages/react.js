@@ -1,7 +1,8 @@
 import React from 'react';
+import ReactJsComponent from '/src/components/React';
 
 const ReactComponent = () => {
-    return <div>ReactComponent</div>
+    return <ReactJsComponent />
 }
 
 export default ReactComponent;

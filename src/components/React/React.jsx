@@ -1,5 +1,4 @@
 import React from "react";
-import JAVASCRIPT_CONFIG from "/src/config/javascriptConfig";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { okaidia } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
@@ -7,13 +6,14 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { DataGrid } from '@mui/x-data-grid';
+import REACT_JS_CONFIG from "../../config/reactJsConfig";
 
-const Javascript = () => {
+const ReactComponent = () => {
   const isAuthenticated = false;
 
   return (
     <Grid>
-      {JAVASCRIPT_CONFIG.map((ele, i) => (
+      {REACT_JS_CONFIG.map((ele, i) => (
         <>
           <Box pt={3}>
             <Typography variant="TitleExtraSmall">{ele.heading}</Typography>
@@ -38,7 +38,7 @@ const Javascript = () => {
                         dispatch(
                           addTodo({
                             title: child.title,
-                            category: "javascript",
+                            category: "react",
                             hashId: child.id,
                           })
                         )
@@ -108,4 +108,4 @@ const Javascript = () => {
   );
 };
 
-export default Javascript;
+export default ReactComponent;

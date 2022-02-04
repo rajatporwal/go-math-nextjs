@@ -158,6 +158,7 @@ india();		// it will get memory at parse/compile time`,
       },
       {
         title: "Arguments",
+        keywords: "Arguments",
         id: "arguments",
         description: `The <b>arguments</b> object is a local variable available within all non-arrow functions. You can refer to a function's <b>arguments</b> inside that function by using its <b>arguments</b> object. It has entries for each <b>argument</b> the function was called with, with the first entry's index at 0 .
     .

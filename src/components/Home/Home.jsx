@@ -7,6 +7,7 @@ import Grid from "@mui/material/Grid";
 import { Accordion, AccordionSummary, AccordionDetails } from "./homeStyles";
 import JAVASCRIPT_CONFIG from "/src/config/javascriptConfig";
 import Link from "/src/Link";
+import REACT_JS_CONFIG from "../../config/reactJsConfig";
 
 const mapper = (config) =>
   config.map((ele) => (
@@ -52,7 +53,7 @@ const Home = () => {
           >
             <Typography>React</Typography>
           </AccordionSummary>
-          <AccordionDetails>{mapper(JAVASCRIPT_CONFIG)}</AccordionDetails>
+          <AccordionDetails>{mapper(REACT_JS_CONFIG)}</AccordionDetails>
         </Accordion>
       </Box>
     </Container>
